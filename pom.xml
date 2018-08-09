@@ -1,0 +1,140 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.skplanet.nlp</groupId>
+	<artifactId>omp-config</artifactId>
+	<version>1.1.1</version>
+
+	<packaging>jar</packaging>
+
+	<name>omp-config</name>
+	<url>http://maven.apache.org</url>
+
+	<!-- 프로젝트의 artifact를 배포할 저장소 -->
+	<!-- distributionManagement>
+		<repository>
+			<id>team-nlp-releases</id>
+			<name>team-nlp-releases</name>
+			<url>http://mvn.skplanet.com/content/repositories/team-nlp-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>team-nlp-snapshots</id>
+			<name>team-nlp-snapshots</name>
+			<url>http://mvn.skplanet.com/content/repositories/team-nlp-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-common</artifactId>
+			<version>2.6.0-cdh5.5.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-hdfs</artifactId>
+			<version>2.6.0-cdh5.5.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.5-cdh5.5.1</version>
+		</dependency>
+	</dependencies -->
+
+	<!-- dependency에 정의된 라이브러리를 다운로드할 저장소 -->
+	<!-- repositories>
+		<repository>
+			<id>team-nlp-group</id>
+			<name>team-nlp-group</name>
+			<url>http://mvn.skplanet.com/content/groups/team-nlp-groups/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>thirdparty-releases</id>
+			<name>JBoss Thirdparty Releases</name>
+			<url>http://mvn.skplanet.com/content/repositories/proxy-jboss-thirdparty-releases/</url>
+		</repository>
+
+		<repository>
+			<id>skp-public</id>
+			<name>skplanet public repository</name>
+			<url>http://mvn.skplanet.com/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories -->
+
+	<!-- maven이 사용하는 plugin을 다운로드할 저장소 -->
+	<!-- pluginRepositories>
+		<pluginRepository>
+			<id>team-nlp-group</id>
+			<name>team-nlp-group</name>
+			<url>http://mvn.skplanet.com/content/groups/team-nlp-groups/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+
+		<pluginRepository>
+			<id>skp-public</id>
+			<name>skp public repository</name>
+			<url>http://mvn.skplanet.com/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories -->
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+
+	<!-- Build 관련. -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-common</artifactId>
+			<version>2.7.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-hdfs</artifactId>
+			<version>2.7.3</version>
+		</dependency>
+	</dependencies>
+</project>
